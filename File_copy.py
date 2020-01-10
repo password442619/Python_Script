@@ -2,7 +2,7 @@ import os
 import sys
 import io
 import shutil
-sys.stdout = io.TextIOWrapper( sys.stdout.buffer, encoding='gb18030')  #更改脚本的标准输出为‘gb18030’
+#sys.stdout = io.TextIOWrapper( sys.stdout.buffer, encoding='gb18030')  #更改脚本的标准输出为‘gb18030’
 with open("file_path.txt",'r', encoding='utf-8') as f:
 	lines = f.readlines()
 
@@ -20,3 +20,4 @@ for i in range(len(lines)):
 	#print(lines_[i])
 f.close()
 ff.close()
+#分别从两个文件中读取需要拷贝的文件目录进行copy
