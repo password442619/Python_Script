@@ -12,3 +12,4 @@ def delblankline(infile, outfile):
 	outfopen.close()
 
 delblankline("test.txt", "new.txt")
+#删除文件中的空白行
