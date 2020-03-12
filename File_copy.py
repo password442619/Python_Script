@@ -15,7 +15,7 @@ for i in range(len(lines)):
 	xsml_ = os.path.join(xsml,file_path.split('\\')[-1]) #file_path用“\”为分隔符，取最后一位拼接到xsml目录里，赋值给xsml_
 	shutil.copyfile(file_path,xsml_) #拷贝file_path为xsml_
 	#print(xsml)
-	#os.makedirs(xsml)
+	#os.makedirs(xsml) #创建相应的文件目录
 	#print(xsml)
 	#print(lines_[i])
 f.close()
